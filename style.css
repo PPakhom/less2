@@ -26,6 +26,7 @@ h1 {
     /* height: 50px; */ /* это для block3*/
     min-height: 50px;
     border-radius: 8px;
+    /* width: 50px; */
 }
 .block1 {
     background-color: cornflowerblue;
@@ -48,4 +49,20 @@ h1 {
 .block3 {
     background-color: bisque;
     grid-row-end: span 5;
+}
+.block9 {
+    background-color: seagreen;
+    justify-self: flex-end;
+}
+.block18 {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: auto;
+    min-height: auto;
+    /* grid-column-end: 6; */
+    /* grid-column-start: 4; */
+    
 }
