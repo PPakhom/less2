@@ -15,10 +15,37 @@ h1 {
     display: grid;
     /* grid-template-columns: 100px 300px auto; */
     /* grid-template-columns: repeat(2, 1fr); */
-    grid-template-columns: repeat(2, auto);
+    /* grid-template-columns: repeat(2, auto); */
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    align-items: stretch;
 }
 .block {
     border: 1px solid;
-    height: 50px;
+    /* height: 50px; */ /* это для block3*/
+    min-height: 50px;
     border-radius: 8px;
+}
+.block1 {
+    background-color: cornflowerblue;
+    /* grid-column-start: 2;
+    grid-row-start: 3; */
+    grid-column-start: 1;
+    grid-column-end: 5;
+    width: 100%;
+    /* grid-column: 1 / 5; */
+}
+.block2 {
+    background-color: crimson;
+    /* block3 */
+    /* grid-row-start: 6; */  
+    grid-row-start: 7;
+    /* grid-column-start: 2; */
+    grid-column-end: span 4; /* занять размер 4-х столбцов*/
+    width: 100%;
+}
+.block3 {
+    background-color: bisque;
+    grid-row-end: span 5;
 }
